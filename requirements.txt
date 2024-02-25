@@ -1,0 +1,4 @@
+apache-beam[gcp]==2.50.0
+google-cloud==0.34.0
+dbt-core==1.6
+dbt-bigquery==1.6.7
