@@ -1,0 +1,8 @@
+version : 2
+
+sources:
+  - name: src_raw
+    database: aotelop-challenge
+    schema: aotelop_edwh_raw
+    tables:
+      - name: tb_ext_conversations

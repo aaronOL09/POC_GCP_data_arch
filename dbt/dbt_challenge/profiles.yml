@@ -1,0 +1,15 @@
+dbt_challenge:
+  outputs:
+    dev:
+      dataset: aotelop_edwh_bronze
+      job_execution_timeout_seconds: 60
+      job_retries: 1
+      location: europe-southwest1
+      method: oauth
+      #method: service-account
+      #keyfile: dbt_bq_credentials.json
+      priority: interactive
+      project: "{{env_var('AOTELOP_CHALLENGE_BQ_PROJECT','aotelop-challenge')}}" #Replace with BigQuery project name if not executed from main pipeline
+      threads: 4
+      type: bigquery
+  target: dev
